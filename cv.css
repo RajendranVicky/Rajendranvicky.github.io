@@ -27,6 +27,7 @@ body{
     padding: 2px;
 }
 .container .card-one .profile{
+      background-image: url(myimage.jpeg);
     display: inline-flex;
     margin-bottom: 5px;
     margin-left: -15px;
