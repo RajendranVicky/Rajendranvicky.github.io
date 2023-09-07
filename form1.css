@@ -1,0 +1,57 @@
+body{
+      background: url(/home/vigneshwaran/Pictures/blink2.jpg);
+      background-size: 100%;
+    }
+    h1{
+      text-align: center;
+      font-size: 50px;
+      text-shadow:  10px 10px 20px black;
+     
+  
+    }
+    .login{
+      border: 5px solid black;
+      width: 400px;
+      margin: 50px auto;
+      font-size: 25px;
+      text-transform: uppercase;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: -10px -10px 10px black,
+      10px 10px 20px black;
+     
+    }
+    .login h2{
+      text-align: center;
+    }
+    input{
+      display: flex;
+      box-sizing: border-box;
+      margin: 20px 0 20px 0;
+      width: 100%;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px black,
+    -5px -5px 5px black;
+      border: 2px  solid black
+    }
+    a{
+      text-decoration: none;
+    }
+    .btn{
+      text-align: center;
+    }
+    button{
+      padding: 10px;
+      margin: 20px 10px 10px 10px;
+      border-radius: 20px;
+      font-size: 20px;
+      box-shadow: 5px 5px 5px black,
+    -5px -5px 5px black;
+      border: 2px  solid black;
+    } 
+    a:hover{
+      color: red;
+      font-size: none;
+    }
