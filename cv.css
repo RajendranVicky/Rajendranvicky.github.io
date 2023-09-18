@@ -9,8 +9,8 @@ body{
 .container{
     margin: auto;
     display: grid;
-    grid-template-columns: 220px 65%;
-    width: 235mm;
+    grid-template-columns: 200px 65%;
+    width: 240mm;
     height: 280mm;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0,0,0, 0.7);
