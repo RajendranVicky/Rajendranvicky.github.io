@@ -374,6 +374,83 @@ nav a{
     font-weight: bold;
     color:aqua;
  }
+/* Default styles for all screen sizes */
+body {
+    overflow: hidden;
+}
+
+/* Left half and right half styles (no change in media queries) */
+
+/* Header styles (no change in media queries) */
+
+/* Logo and navigation styles (no change in media queries) */
+
+/* Image styles (no change in media queries) */
+
+/* Right half content styles (no change in media queries) */
+
+/* About section styles (no change in media queries) */
+
+/* Education section styles (no change in media queries) */
+
+/* Language section styles (no change in media queries) */
+
+/* Projects section styles (no change in media queries) */
+
+/* Contact section styles (no change in media queries) */
+
+/* Media Queries */
+
+/* For Android screens */
+@media screen and (max-width: 768px) and (max-height: 1280px) {
+    /* Adjust styles for Android screens */
+    .leftHalf {
+        width: 100%;
+        position: relative;
+    }
+
+    .rightHalf {
+        width: 100%;
+        position: relative;
+    }
+
+    /* Additional styles specific to Android screens */
+}
+
+/* For iPhones */
+@media screen and (max-device-width: 414px) and (max-device-height: 896px) {
+    /* Adjust styles for iPhones */
+    .leftHalf {
+        width: 100%;
+        position: relative;
+    }
+
+    .rightHalf {
+        width: 100%;
+        position: relative;
+    }
+
+    /* Additional styles specific to iPhones */
+}
+
+/* For iPads */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Adjust styles for iPads */
+    .leftHalf {
+        width: 50%;
+    }
+
+    .rightHalf {
+        width: 50%;
+    }
+
+    /* Additional styles specific to iPads */
+}
+
+/* For screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1025px) {
+    /* Adjust the layout or styles as needed */
+}
 
  
  
