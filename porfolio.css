@@ -480,7 +480,19 @@ body {
 }
 
 /* You can add more media queries as needed for other screen sizes */
+@media screen and (max-width: 768px) {
+  .image {
+    width: 200px; /* Adjust the width for tablets */
+    height: 200px; /* Adjust the height for tablets */
+  }
+}
 
+@media screen and (max-width: 576px) {
+  .image {
+    width: 150px; /* Adjust the width for smartphones */
+    height: 150px; /* Adjust the height for smartphones */
+  }
+}
 
  
  
