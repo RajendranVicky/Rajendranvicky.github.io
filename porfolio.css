@@ -1,64 +1,62 @@
+/* Default styles for larger screens */
 body {
     overflow: hidden;
-}
-
-
-.leftHalf {
-    background: url("WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
+  }
+  
+  .leftHalf {
+    background: url("/home/vigneshwaran/Downloads/WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
     width: 25%;
     left: 0px;
     height: 100%;
     position: absolute;
     animation: leftHalf 4s ease-out;
-
- }
- @keyframes leftHalf {
-    0%{
-        opacity: 0;
-        transform: translateX(-100%);
+  }
+  
+  @keyframes leftHalf {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
     }
-    
-}
-
- .rightHalf {
+  }
+  
+  .rightHalf {
     /* background-color:rgb(116, 112, 112); */
     width: 75%;
     position: absolute;
     right: 0px;
     height: 100%;
     animation: right 4s ease-out;
- }
- @keyframes right {
-    0%{
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    
-}
- 
+  }
   
-
-
-.empty{
+  @keyframes right {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+  
+  .empty {
     display: flex;
     background-color: black;
-    color:white;
+    color: white;
     padding-left: 40px;
     font-family: Ribeye;
     padding-top: 10px;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-}
-.empty #port{
+  }
+  
+  .empty #port {
     padding-top: 5px;
     font-size: 3rem;
-}
-.empty button{
+  }
+  
+  .empty button {
     display: flex;
     justify-content: space-evenly;
     margin-left: 980px;
-    color:white;
+    color: white;
     background-color: green;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
@@ -66,441 +64,147 @@ body {
     padding: 5px;
     margin-top: 8px;
     font-family: Roboto;
-}
-button:hover{
-    color:aqua;
-}
-.empty span{
+  }
+  
+  button:hover {
+    color: aqua;
+  }
+  
+  .empty span {
     font-weight: bold;
     color: rgb(27, 121, 27);
-}
-.sitebar{
-    display:flex;
+  }
+  
+  .sitebar {
+    display: flex;
     padding: 1em;
     flex-wrap: wrap;
     row-gap: 1em;
     margin-left: 80px;
     margin-right: 10px;
-    background-color:rgb(73, 71, 71);
+    background-color: rgb(73, 71, 71);
     border-radius: 40px;
     position: -webkit-sticky;
     position: sticky;
     top: 80px;
-    animation:header 3s  ease-in-out;
-    
-}
-@keyframes header{
-    0%{
-        
-        transform: translateY(-100%);
+    animation: header 3s ease-in-out;
+  }
+  
+  @keyframes header {
+    0% {
+      transform: translateY(-100%);
     }
-}
-.logo{
+  }
+  
+  .logo {
     display: inline-flex;
     width: 60px;
     height: 50px;
     border-radius: 50%;
     border: 4px solid #2c2b29;
-    background-image: url(VREta.png); 
+    background-image: url(/home/vigneshwaran/Downloads/VREta.png);
     background-position: center;
     background-size: 100%;
     margin-left: 10px;
- }
-
-
-.sitebar a{
-    text-decoration: None;
+  }
+  
+  .sitebar a {
+    text-decoration: none;
     display: inline;
     font-size: 1.5em;
-}
-.sitebar a:hover{
+  }
+  
+  .sitebar a:hover {
     text-decoration: none;
-}
-.sitebar a span{
-    color:white;
+  }
+  
+  .sitebar a span {
+    color: white;
     font-weight: bold;
-}
-.sitebar a span:hover{
-    color:aqua;
-}
-
-.sitebar .first{
+  }
+  
+  .sitebar a span:hover {
+    color: aqua;
+  }
+  
+  .sitebar .first {
     margin-top: 2px;
     margin-left: 10px;
     font-size: 3rem;
     font-family: Ribeye;
     color: white;
-
-}
-
-.first span{
+  }
+  
+  .first span {
     font-size: 1.5rem;
-}
-.first span:hover{
+  }
+  
+  .first span:hover {
     overflow: visible;
     font-weight: bold;
     font-size: 3rem;
-    
-}
-nav{
-    flex:2;
-    display:flex;
+  }
+  
+  nav {
+    flex: 2;
+    display: flex;
     align-items: center;
-}
-
-nav a{
-    flex:1;
-}
-
-
-.sitebar nav .second {
+  }
+  
+  nav a {
+    flex: 1;
+  }
+  
+  .sitebar nav .second {
     display: flex;
     float: right;
     margin-right: 10px;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-left: 100px;
-    color:black;
-    background-color:aqua;
+    color: black;
+    background-color: aqua;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
     border-radius: 20px;
     padding: 5px;
     margin-top: 8px;
     font-family: Roboto;
-}
-
-.second:hover{
-    color:aqua;
-}
-.image{
+  }
+  
+  .second:hover {
+    color: aqua;
+  }
+  
+  .image {
     display: inline-flex;
     margin-left: 270px;
     width: 280px;
     height: 270px;
     border-radius: 50%;
-    background-image: url(VIGNESH.png); 
+    background-image: url(/home/vigneshwaran/Downloads/VIGNESH.png);
     background-position: center;
     background-size: 100%;
     position: -webkit-sticky;
     position: sticky;
     top: 100px;
-    animation:image 4s  ease-in-out;
-    
-
-} 
-@keyframes image{
-    0%{
-        
-        transform: translateY(-100%);
+    animation: image 4s ease-in-out;
+  }
+  
+  @keyframes image {
+    0% {
+      transform: translateY(-100%);
     }
-}
-.rightHalf{
+  }
+  
+  .rightHalf {
     background-color: rgb(116, 112, 112);
     overflow: scroll;
-}
-.rightHalf .para{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Roboto;
-    line-height: 30px;
-    margin-top: 350px;
-    margin-left: 220px;
-    margin-right: 20px;
-}
-.rightHalf button{
-    background-color: white;
-    color: black;
-    font-family: Roboto;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 10px;
-
-}
-.rightHalf .para span{
-    color: aqua;
-    font-weight: bold;
-}
-.about h1,.h2{
-    text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-}
-.about h1{
-    color: white;
-}
-.about .h2{
-    font-weight: bold;
-    color: aqua;
-    text-align: center;
-    margin-top: 0;
-}
-.about{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Roboto;
-    line-height: 30px;
-    margin-left: 220px;
-    margin-right: 20px;
-}
-.about p{
-    margin-top: 30px;
-}
-.about span{
-    color: aqua;
-    font-weight: bold;
-}
-.edu h1{
-   text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-}.edu h1{
-    color: white;
-}
-.edu .h2{
-    font-weight: bold;
-    color: aqua;
-   text-align: center;
-    margin-top: 0;
-}.edu{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Roboto;
-    line-height: 30px;
-    margin-left: 220px;
-    margin-right: 20px;
-}
-.edu .education{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-}
-.lan h1{
-  text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-}.lan h1{
-    color: white;
-}
-.lan .h2{
-    font-weight: bold;
-    color: aqua;
-   text-align: center;
-    margin-top: 0;
-}.lan{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Roboto;
-    line-height: 30px;
-    margin-left: 220px;
-   
-}
-.lan .language{
-    margin-left: 280px;
-    margin-top: 20px;
-}
-.pro h1{
-   text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-}.pro h1{
-    color: white;
-}
-.pro .h2{
-    font-weight: bold;
-    color: aqua;
-    text-align: center;
-    margin-top: 0;
-}.pro{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Roboto;
-    line-height: 30px;
-    margin-left: 220px;
-    margin-right: 20px;
-}
-.pro .code{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-}
-.pro .code h2{
-    color: black;
-    font-size: 40px;
-    font-weight: bold;
-}
-.con h1{
-    text-align: center;
-     font-weight: bold;
-     font-size: 60px;
- }.con h1{
-     color: white;
- }
- .con .h2{
-     font-weight: bold;
-     color: aqua;
-     text-align: center;
-     margin-top: 0;
- }.con{
-     color: white;
-     font-size: 20px;
-     font-weight: bold;
-     font-family: Roboto;
- }
- .con .ul{
-    border: 2px solid black;
-    border-radius: 10px;
-    margin-left: 220px;
-    margin-right: 150px;
- }
- .con .ul h3,h4{
-    text-align: center;
-    padding: 10px;
- }
- .con .ul span{
-    color:black;
- }
- .con .ul h3{
-    font-size: 40px;
-    font-weight: bold;
-    color: black;
- }
- .con .ul h4{
-    font-size: 30px;
-    font-weight: bold;
-    color:aqua;
- }
-/* Default styles for larger screens */
-body {
-  overflow: hidden;
-}
-
-.leftHalf {
-  /* Your existing styles for the left half */
-}
-
-.rightHalf {
-  /* Your existing styles for the right half */
-}
-
-.empty button {
-  /* Your existing styles for the download button */
-}
-
-.sitebar {
-  /* Your existing styles for the header */
-}
-
-.logo {
-  /* Your existing styles for the logo */
-}
-
-.sitebar a {
-  /* Your existing styles for navigation links */
-}
-
-.image {
-  /* Your existing styles for the image */
-}
-
-.rightHalf {
-  background-color: rgb(116, 112, 112);
-  overflow: scroll;
-}
-
-/* Media queries for tablets (768px and below) */
-@media screen and (max-width: 768px) {
-  .leftHalf {
-    width: 100%;
-    /* Adjust width for responsiveness on tablets */
   }
   
-  .rightHalf {
-    width: 100%;
-    /* Adjust width for responsiveness on tablets */
-  }
-
-  .empty button {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    /* Center the download button */
-  }
-}
-
-/* Media queries for smartphones (576px and below) */
-@media screen and (max-width: 576px) {
-  .leftHalf {
-    display: none;
-    /* Hide the left half on small screens */
-  }
-  
-  .rightHalf {
-    width: 100%;
-    /* Adjust width for responsiveness on smartphones */
-  }
-
-  .empty {
-    padding-left: 10px;
-    /* Reduce left padding on small screens */
-  }
-
-  .sitebar {
-    margin-left: 10px;
-    margin-right: 10px;
-    /* Adjust margin for responsiveness on smartphones */
-  }
-  
-  .sitebar a.second {
-    margin-left: 10px;
-    /* Adjust margin for responsiveness on smartphones */
-  }
-
-  .image {
-    display: none;
-    /* Hide the image on small screens */
-  }
-
   .rightHalf .para {
-    margin-left: 10px;
-    margin-right: 10px;
-    /* Adjust margins for responsiveness on smartphones */
-  }
-  
-  .rightHalf .para button {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    /* Center the "contact me" button */
-  }
-}
-
-/* You can add more media queries as needed for other screen sizes */
-@media screen and (max-width: 768px) {
-  .image {
-    width: 200px; /* Adjust the width for tablets */
-    height: 200px; /* Adjust the height for tablets */
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .image {
-    width: 150px; /* Adjust the width for smartphones */
-    height: 150px; /* Adjust the height for smartphones */
-  }
-}
-
- 
- 
-
- 
- 
-
-
-
-
-
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+  }  
