@@ -374,83 +374,113 @@ nav a{
     font-weight: bold;
     color:aqua;
  }
-/* Default styles for all screen sizes */
+/* Default styles for larger screens */
 body {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-/* Left half and right half styles (no change in media queries) */
-
-/* Header styles (no change in media queries) */
-
-/* Logo and navigation styles (no change in media queries) */
-
-/* Image styles (no change in media queries) */
-
-/* Right half content styles (no change in media queries) */
-
-/* About section styles (no change in media queries) */
-
-/* Education section styles (no change in media queries) */
-
-/* Language section styles (no change in media queries) */
-
-/* Projects section styles (no change in media queries) */
-
-/* Contact section styles (no change in media queries) */
-
-/* Media Queries */
-
-/* For Android screens */
-@media screen and (max-width: 768px) and (max-height: 1280px) {
-    /* Adjust styles for Android screens */
-    .leftHalf {
-        width: 100%;
-        position: relative;
-    }
-
-    .rightHalf {
-        width: 100%;
-        position: relative;
-    }
-
-    /* Additional styles specific to Android screens */
+.leftHalf {
+  /* Your existing styles for the left half */
 }
 
-/* For iPhones */
-@media screen and (max-device-width: 414px) and (max-device-height: 896px) {
-    /* Adjust styles for iPhones */
-    .leftHalf {
-        width: 100%;
-        position: relative;
-    }
-
-    .rightHalf {
-        width: 100%;
-        position: relative;
-    }
-
-    /* Additional styles specific to iPhones */
+.rightHalf {
+  /* Your existing styles for the right half */
 }
 
-/* For iPads */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    /* Adjust styles for iPads */
-    .leftHalf {
-        width: 50%;
-    }
-
-    .rightHalf {
-        width: 50%;
-    }
-
-    /* Additional styles specific to iPads */
+.empty button {
+  /* Your existing styles for the download button */
 }
 
-/* For screens larger than 1024px (e.g., desktops) */
-@media (min-width: 1025px) {
-    /* Adjust the layout or styles as needed */
+.sitebar {
+  /* Your existing styles for the header */
 }
+
+.logo {
+  /* Your existing styles for the logo */
+}
+
+.sitebar a {
+  /* Your existing styles for navigation links */
+}
+
+.image {
+  /* Your existing styles for the image */
+}
+
+.rightHalf {
+  background-color: rgb(116, 112, 112);
+  overflow: scroll;
+}
+
+/* Media queries for tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .leftHalf {
+    width: 100%;
+    /* Adjust width for responsiveness on tablets */
+  }
+  
+  .rightHalf {
+    width: 100%;
+    /* Adjust width for responsiveness on tablets */
+  }
+
+  .empty button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* Center the download button */
+  }
+}
+
+/* Media queries for smartphones (576px and below) */
+@media screen and (max-width: 576px) {
+  .leftHalf {
+    display: none;
+    /* Hide the left half on small screens */
+  }
+  
+  .rightHalf {
+    width: 100%;
+    /* Adjust width for responsiveness on smartphones */
+  }
+
+  .empty {
+    padding-left: 10px;
+    /* Reduce left padding on small screens */
+  }
+
+  .sitebar {
+    margin-left: 10px;
+    margin-right: 10px;
+    /* Adjust margin for responsiveness on smartphones */
+  }
+  
+  .sitebar a.second {
+    margin-left: 10px;
+    /* Adjust margin for responsiveness on smartphones */
+  }
+
+  .image {
+    display: none;
+    /* Hide the image on small screens */
+  }
+
+  .rightHalf .para {
+    margin-left: 10px;
+    margin-right: 10px;
+    /* Adjust margins for responsiveness on smartphones */
+  }
+  
+  .rightHalf .para button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* Center the "contact me" button */
+  }
+}
+
+/* You can add more media queries as needed for other screen sizes */
+
 
  
  
