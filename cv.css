@@ -9,7 +9,7 @@ body{
 .container{
     margin: auto;
     display: grid;
-    grid-template-columns: 300px 68%;
+    grid-template-columns: 280px 68%;
     width: 235mm;
     height: 300mm;
     overflow: hidden;
@@ -17,7 +17,7 @@ body{
 }
 .container .card-one{
     padding: 20px 10px;
-    padding-left: 35px;
+    padding-left: 24px;
     background-color: #d1d1d1;
     width: 100%;
     color: #313131;
@@ -101,6 +101,10 @@ body{
     line-height: 30px;
     font-weight: bold;
 }
+.card-one .lan{
+    line-height: 30px;
+    font-weight: bold;
+}
 
 .container .personal-box h2{
     background-color: #f5a609;
@@ -160,7 +164,7 @@ body{
 .card-two .para{
     font-weight: bold;
     color: #d1d1d1;
-    padding: 10px 0 10px 20px;
+    padding: 10px 10px 10px 20px;
 }
 .card-two  .para li{
     padding-left: 10px;
