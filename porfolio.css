@@ -4,7 +4,7 @@ body {
   }
   
   .leftHalf {
-    background: url("/home/vigneshwaran/Downloads/WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
+    background: url("WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
     width: 25%;
     left: 0px;
     height: 100%;
@@ -116,7 +116,7 @@ body {
     height: 50px;
     border-radius: 50%;
     border: 4px solid #2c2b29;
-    background-image: url(/home/vigneshwaran/Downloads/VREta.png);
+    background-image: url(VREta.png);
     background-position: center;
     background-size: 100%;
     margin-left: 10px;
@@ -195,7 +195,7 @@ body {
     width: 280px;
     height: 270px;
     border-radius: 50%;
-    background-image: url(/home/vigneshwaran/Downloads/VIGNESH.png);
+    background-image: url(VIGNESH.png);
     background-position: center;
     background-size: 100%;
     position: -webkit-sticky;
