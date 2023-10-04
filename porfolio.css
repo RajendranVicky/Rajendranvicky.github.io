@@ -4,7 +4,7 @@ body {
   }
   
   .leftHalf {
-    background: url("WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
+    background: url("/home/vigneshwaran/Downloads/WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
     width: 25%;
     left: 0px;
     height: 100%;
@@ -18,6 +18,7 @@ body {
       transform: translateX(-100%);
     }
   }
+  
   
   .rightHalf {
     /* background-color:rgb(116, 112, 112); */
@@ -34,11 +35,23 @@ body {
       transform: translateX(100%);
     }
   }
+  #wrap {
+    background-color: rgb(116, 112, 112);
+    position: sticky;
+  }
+  #btn{
+    float: right;
+    color: black;
+  }
+  #wrap #color{
+    float: right;
+    margin-right: 50px;
+  }
   
-  .empty {
+   .empty {
     display: flex;
-    background-color: black;
     color: white;
+    background-color: black;
     padding-left: 40px;
     font-family: Ribeye;
     padding-top: 10px;
@@ -52,23 +65,24 @@ body {
     font-size: 3rem;
   }
   
-  .empty button {
+  .empty  nav a {
     display: flex;
     justify-content: space-evenly;
-    margin-left: 980px;
+    margin-left: 930px;
     color: white;
     background-color: green;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 8px;
+    border-radius: 10px;
+    margin-top: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-family: Roboto;
   }
-  
-  button:hover {
-    color: aqua;
+  .empty nav a{
+    text-decoration: none;
   }
+
   
   .empty span {
     font-weight: bold;
@@ -102,7 +116,7 @@ body {
     height: 50px;
     border-radius: 50%;
     border: 4px solid #2c2b29;
-    background-image: url(VREta.png);
+    background-image: url(/home/vigneshwaran/Downloads/VREta.png);
     background-position: center;
     background-size: 100%;
     margin-left: 10px;
@@ -142,7 +156,7 @@ body {
   .first span:hover {
     overflow: visible;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   
   nav {
@@ -181,7 +195,7 @@ body {
     width: 280px;
     height: 270px;
     border-radius: 50%;
-    background-image: url(VIGNESH.png);
+    background-image: url(/home/vigneshwaran/Downloads/VIGNESH.png);
     background-position: center;
     background-size: 100%;
     position: -webkit-sticky;
@@ -198,7 +212,7 @@ body {
   
   .rightHalf {
     background-color: rgb(116, 112, 112);
-    overflow: scroll;
+   overflow: scroll;
   }
   
   .rightHalf .para {
@@ -208,79 +222,292 @@ body {
     font-family: Roboto;
     line-height: 30px;
   }  
- /* Media queries for tablets (768px and below) */
-@media screen and (max-width: 768px) {
-    .leftHalf {
-      width: 100%;
-    }
-  
-    .rightHalf {
-      width: 100%;
-    }
-  
-    .empty button {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-  
-    .sitebar {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-  
-    .sitebar a.second {
-      margin-left: 10px;
-    }
-  
-    .image {
-      display: none;
-    }
-  
-    .rightHalf .para {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-  
-    .rightHalf .para button {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
+  .rightHalf .para{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-top: 350px;
+    margin-left: 220px;
+    margin-right: 20px;
   }
-  
-  /* Media queries for smartphones (576px and below) */
-  @media screen and (max-width: 576px) {
-    .leftHalf {
-      display: none;
-    }
-  
-    .rightHalf {
-      width: 100%;
-    }
-  
-    .empty {
-      padding-left: 10px;
-    }
-  
-    .sitebar {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-  
-    .sitebar a.second {
-      margin-left: 10px;
-    }
-  
-    .rightHalf .para {
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-top: 100px;
-    }
-  
-    .rightHalf .para button {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
+   .rightHalf .para a{
+    text-decoration: none;
   }
+ .para a{
+    background-color: white;
+    color: black;
+    font-family: Roboto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.rightHalf .para span{
+    color: aqua;
+    font-weight: bold;
+}
+.about h1,.h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+.about h1{
+    color: white;
+}
+.about .h2{
+    font-weight: bold;
+    color: aqua;
+    text-align: center;
+    margin-top: 0;
+}
+.about{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-left: 220px;
+    margin-right: 20px;
+}
+.about p{
+    margin-top: 30px;
+}
+.about span{
+    color: aqua;
+    font-weight: bold;
+}
+.edu h1{
+   text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}.edu h1{
+    color: white;
+}
+.edu .h2{
+    font-weight: bold;
+    color: aqua;
+   text-align: center;
+    margin-top: 0;
+}.edu{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-left: 220px;
+    margin-right: 20px;
+}
+.edu .education{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.lan h1{
+  text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}.lan h1{
+    color: white;
+}
+.lan .h2{
+    font-weight: bold;
+    color: aqua;
+   text-align: center;
+    margin-top: 0;
+}.lan{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-left: 220px;
+   
+}
+.lan .language{
+    margin-left: 280px;
+    margin-top: 20px;
+}
+.pro h1{
+   text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}.pro h1{
+    color: white;
+}
+.pro .h2{
+    font-weight: bold;
+    color: aqua;
+    text-align: center;
+    margin-top: 0;
+}.pro{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-left: 220px;
+    margin-right: 20px;
+}
+.pro .code{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+.pro .code h2{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+.con h1{
+    text-align: center;
+     font-weight: bold;
+     font-size: 60px;
+ }.con h1{
+     color: white;
+ }
+ .con .h2{
+     font-weight: bold;
+     color: aqua;
+     text-align: center;
+     margin-top: 0;
+ }.con{
+     color: white;
+     font-size: 20px;
+     font-weight: bold;
+     font-family: Roboto;
+ }
+ .con .ul{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 220px;
+    margin-right: 150px;
+ }
+ .con .ul h3,h4{
+    text-align: center;
+    padding: 10px;
+ }
+ .con .ul span{
+    color:black;
+ }
+ .con .ul h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+ }
+ .con .ul h4{
+    font-size: 30px;
+    font-weight: bold;
+    color:aqua;
+ }
+/* Default styles for larger screens */
+body {
+  overflow: hidden;
+}
+
+/* Styles for devices with a maximum width of 768px (e.g., tablets) */
+@media (max-width: 768px) {
+  .leftHalf {
+    width: 100%;
+    position: relative;
+    animation: none;
+  }
+
+  .rightHalf {
+    width: 100%;
+    position: relative;
+    animation: none;
+    overflow: visible;
+  }
+
+  .empty nav a {
+    margin-left: 0;
+  }
+
+  .sitebar {
+    margin-left: 0;
+    top: 0;
+  }
+
+  .image {
+    margin-left: 0;
+    top: 0;
+  }
+
+  .rightHalf .para {
+    margin: 20px;
+  }
+
+  /* Add additional responsive styles here */
+}
+
+/* Styles for devices with a maximum width of 480px (e.g., smartphones) */
+@media (max-width: 480px) {
+  .leftHalf, .rightHalf {
+    width: 100%;
+    position: relative;
+    animation: none;
+    overflow: visible;
+  }
+
+  .empty nav a {
+    margin-left: 0;
+  }
+
+  .sitebar {
+    margin-left: 0;
+    top: 0;
+  }
+
+  .image {
+    margin-left: 0;
+    top: 0;
+  }
+
+  .rightHalf .para {
+    margin: 20px;
+  }
+
+  /* Add additional responsive styles here */
+}
+
+/* Styles for devices with a minimum width of 1200px (e.g., large desktop screens) */
+@media (min-width: 1200px) {
+  .leftHalf {
+    width: 25%;
+  }
+
+  .rightHalf {
+    width: 75%;
+  }
+
+  .empty nav a {
+    margin-left: 930px;
+  }
+
+  .sitebar {
+    margin-left: 80px;
+    top: 80px;
+  }
+
+  .image {
+    margin-left: 270px;
+    top: 100px;
+  }
+
+  .rightHalf .para {
+    margin-top: 350px;
+    margin-left: 220px;
+  }
+
+  /* Add additional responsive styles here */
+}
+
+ 
+ 
+
