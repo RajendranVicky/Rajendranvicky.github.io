@@ -728,7 +728,7 @@ body {
 }
 @media(max-width: 700px) {
   body {
-      overflow: scroll; /* Allow scrolling on small screens */
+      overflow: hidden; /* Allow scrolling on small screens */
   }
 
   .leftHalf {
@@ -844,9 +844,8 @@ body {
     background-image: url("WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
     background-position: center;
     background-size: 100%;
-    position: relative;
-    opacity: 0.4; 
-    top: 0px;
+    position: sticky;
+    top: 10px;
     
   }
   .image {
@@ -911,7 +910,7 @@ body {
 }
 @media(max-width: 402px) {
   body {
-    overflow: scroll; /* Allow scrolling on small screens */
+    overflow: hidden; /* Allow scrolling on small screens */
 }
 
 .leftHalf {
@@ -1063,9 +1062,8 @@ display: none;
     background-image: url("WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
     background-position: center;
     background-size: 100%;
-    position: relative;
-    opacity: 0.4; 
-    top: 0px;
+    position: sticky;
+    top: 10px;
     
   }
   .image {
