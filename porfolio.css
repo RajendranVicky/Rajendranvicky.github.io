@@ -742,7 +742,7 @@ body {
       right: 0px;
       height: 100%;
       animation: right 4s ease-out;
-      overflow-y: hidden;
+      overflow-y:scroll;
      
     }
   .sitebar .first {
@@ -911,21 +911,23 @@ body {
 }
 @media(max-width: 402px) {
   body {
-      overflow-y: scroll; /* Allow scrolling on small screens */
+    overflow: scroll; /* Allow scrolling on small screens */
+}
+
+.leftHalf {
+display: none;
+}
+
+
+  .rightHalf {
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    animation: right 4s ease-out;
+    overflow-y: scroll;
+   
   }
-
-  .leftHalf {
-  display: none;
-  }
-
-
-    .rightHalf {
-      width: 100%;
-      position: absolute;
-      height: 100%;
-      animation: right 4s ease-out;
-      overflow-y: scroll;
-    }
     .empty {
       display: flex;
       color: white;
@@ -1061,8 +1063,9 @@ body {
     background-image: url("/home/vigneshwaran/Downloads/WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
     background-position: center;
     background-size: 100%;
-    position: sticky;
-    top: 10px;
+    position: relative;
+    opacity: 0.4; 
+    top: 0px;
     
   }
   .image {
