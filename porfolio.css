@@ -79,7 +79,10 @@ body {
     padding-bottom: 5px;
     font-family: Roboto;
   }
- 
+  .empty nav a{
+    text-decoration: none;
+  }
+
   
   .empty span {
     font-weight: bold;
@@ -735,11 +738,11 @@ body {
 
     .rightHalf {
       width: 100%;
-      position: absolute;
+      position: relative;
       right: 0px;
       height: 100%;
       animation: right 4s ease-out;
-      overflow-y: scroll;
+      overflow-y: hidden;
      
     }
   .sitebar .first {
@@ -837,12 +840,13 @@ body {
   .myimg{
     margin: 0 auto;
     width: 250px;
-    height: 300px;
+    height: 250px;
     background-image: url("WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
     background-position: center;
     background-size: 100%;
-    position: sticky;
-    top: 10px;
+    position: relative;
+    opacity: 0.4; 
+    top: 0px;
     
   }
   .image {
@@ -917,7 +921,7 @@ body {
 
     .rightHalf {
       width: 100%;
-      position: relative;
+      position: absolute;
       right: 0px;
       height: 100%;
       animation: right 4s ease-out;
@@ -929,11 +933,11 @@ body {
       color: white;
       background-color: black;
       padding: 0;
-        margin-left: 10px;
       font-family: Ribeye;
       position: -webkit-sticky;
       position: sticky;
       top: 0px;
+      margin-left: 10px;
     }
     .empty #port {
       padding-top: 6px;
@@ -966,7 +970,7 @@ body {
     font-weight: bold;
     font-family: Roboto;
     line-height: 30px;
-    margin-top: 500px;
+    margin-top: 400px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -1059,9 +1063,8 @@ body {
     background-image: url("WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
     background-position: center;
     background-size: 100%;
-    position: relative;
-    opacity: 0.5; 
-    top: 0px;
+    position: sticky;
+    top: 10px;
     
   }
   .image {
@@ -1089,8 +1092,8 @@ body {
   }
 
   .logo {
-     width: 10px;
-     height: 10px;
+     width: 5px;
+     height: 5px;
   }
 
   .sitebar nav .second {
