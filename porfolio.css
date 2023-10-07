@@ -921,11 +921,11 @@ body {
 
     .rightHalf {
       width: 100%;
-      position: relative;
+      position: absolute;
       right: 0px;
       height: 100%;
       animation: right 4s ease-out;
-      overflow: hidden;
+      overflow: scroll;
      
     }
     .empty {
