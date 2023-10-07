@@ -911,7 +911,7 @@ body {
 }
 @media(max-width: 402px) {
   body {
-      overflow: scroll; /* Allow scrolling on small screens */
+      overflow-y: scroll; /* Allow scrolling on small screens */
   }
 
   .leftHalf {
