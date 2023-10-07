@@ -921,11 +921,11 @@ body {
 
     .rightHalf {
       width: 100%;
-      position: absolute;
+      position: relative;
       right: 0px;
       height: 100%;
       animation: right 4s ease-out;
-      overflow-y: scroll;
+      overflow: hidden;
      
     }
     .empty {
@@ -1063,8 +1063,9 @@ body {
     background-image: url("WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
     background-position: center;
     background-size: 100%;
-    position: sticky;
-    top: 10px;
+    position: absolute;
+    opacity: 0.5;
+    top: 0px;
     
   }
   .image {
