@@ -841,7 +841,7 @@ body {
     background-image: url("WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
     background-position: center;
     background-size: 100%;
-    position: relative;
+    position: sticky;
     top: 10px;
     
   }
