@@ -929,6 +929,7 @@ body {
       color: white;
       background-color: black;
       padding: 0;
+        margin-left: 10px;
       font-family: Ribeye;
       position: -webkit-sticky;
       position: sticky;
@@ -1087,8 +1088,8 @@ body {
   }
 
   .logo {
-     width: 5px;
-     height: 5px;
+     width: 10px;
+     height: 10px;
   }
 
   .sitebar nav .second {
