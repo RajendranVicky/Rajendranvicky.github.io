@@ -922,11 +922,9 @@ body {
     .rightHalf {
       width: 100%;
       position: absolute;
-      right: 0px;
       height: 100%;
       animation: right 4s ease-out;
       overflow-y: scroll;
-     
     }
     .empty {
       display: flex;
