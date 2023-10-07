@@ -65,12 +65,12 @@ body {
     font-size: 3rem;
   }
   
-  .empty  nav a {
+  .empty  nav button {
     display: flex;
     justify-content: space-evenly;
     margin-left: 930px;
-    color: white;
-    background-color: green;
+    color:black;
+    background-color: hsl(180, 100%, 50%);
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
     border-radius: 10px;
@@ -86,7 +86,7 @@ body {
   
   .empty span {
     font-weight: bold;
-    color: rgb(27, 121, 27);
+    color: aqua;
   }
   
   .sitebar {
@@ -94,6 +94,7 @@ body {
     padding: 1em;
     flex-wrap: wrap;
     row-gap: 1em;
+    margin-top: 10px;
     margin-left: 80px;
     margin-right: 10px;
     background-color: rgb(73, 71, 71);
@@ -191,7 +192,8 @@ body {
   
   .image {
     display: inline-flex;
-    margin-left: 270px;
+    margin-left: 260px;
+    margin-top: 0;
     width: 280px;
     height: 270px;
     border-radius: 50%;
@@ -200,7 +202,7 @@ body {
     background-size: 100%;
     position: -webkit-sticky;
     position: sticky;
-    top: 100px;
+    top: 80px;
     animation: image 4s ease-in-out;
   }
   
@@ -405,7 +407,504 @@ body {
     font-weight: bold;
     color:aqua;
  }
+@media(max-width: 1340px) {
+  body {
+      overflow: auto; /* Allow scrolling on small screens */
+  }
 
+  .leftHalf {
+    margin-top: 35px;
+    width: 25%;
+    left: 0px;
+    height: 100%;
+    position: absolute;
+    animation: leftHalf 4s ease-out;
+  }
+
+
+    .rightHalf {
+      /* background-color:rgb(116, 112, 112); */
+      width: 75%;
+      position: absolute;
+      right: 0px;
+      height: 100%;
+      animation: right 4s ease-out;
+      overflow-y: scroll;
+    }
+
+  .sitebar .first {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-family: Ribeye;
+    color: white;
+  }
+  .rightHalf .para{
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-top: 300px;
+    margin-left: 200px;
+    margin-right: 20px;
+  }
+  .about{
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-left: 200px;
+    margin-right: 20px;
+}
+.edu{
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 30px;
+  margin-left: 200px;
+  margin-right: 20px;
+}
+.pro{
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 30px;
+  margin-left: 170px;
+  margin-right: 20px;
+}
+.con .ul{
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: 200px;
+  margin-right: 20px;
+}
+.lan{
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 30px;
+  margin-left: 200px;
  
+}
+.lan .language{
+  margin-left: 200px;
+  margin-top: 20px;
+}
+.pro .code{
+  margin-top: 50px;
+  padding: 5px;
+}
+.pro .code h2{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+  
+
+  .empty nav button {
+    float: right;
+    margin-right: 20px;
+      margin: 10px auto; /* Center-align the button on small screens */
+  }
+
+  .image {
+    display: inline-flex;
+    margin-left: 220px;
+    margin-top: 0;
+    width: 220px;
+    height: 210px;
+    border-radius: 50%;
+    background-image: url(VIGNESH.png);
+    background-position: center;
+    background-size: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    animation: image 4s ease-in-out; /* Maintain aspect ratio */
+  }
+
+  /* Additional styles for small screens */
+  .sitebar { /* Adjust margin for the sitebar */
+      top: 0; /* Stick it to the top */
+  }
+
+  .logo {
+    margin-top: 10px;
+     width: 40px;
+     height: 30px;
+  }
+
+  .sitebar nav .second {
+    display: flex;
+    float: right;
+    margin-right: 10px;
+    justify-content: space-between;
+    margin-left: 30px;
+    color: black;
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 8px;
+    font-family: Roboto;
+  }
+
+  /* Add more small-sized screen styles here */
+}
+@media(max-width: 1000px) {
+  body {
+      overflow: hidden; /* Allow scrolling on small screens */
+  }
+
+  .leftHalf {
+    width: 30%;
+    left: 0px;
+    margin-top: 30px;
+    height: 100%;
+    position: absolute;
+    animation: leftHalf 4s ease-out;
+  }
+
+
+    .rightHalf {
+      /* background-color:rgb(116, 112, 112); */
+      width: 70%;
+      position: absolute;
+      right: 0px;
+      height: 100%;
+      animation: right 4s ease-out;
+      overflow-y: scroll;
+    }
+
+  .sitebar .first {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: Ribeye;
+    color: white;
+  }
+  .rightHalf .para{
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-top: 300px;
+    margin-left: 100px;
+    margin-right: 20px;
+  }
+  .about{
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+.edu{
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 30px;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+.con .ul{
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+.lan{
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 30px;
+  margin-left: 100px;
  
+}
+.lan .language{
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.pro h1{
+  text-align: center;
+   font-weight: bold;
+   font-size: 60px;
+}.pro h1{
+   color: white;
+}
+.pro .h2{
+   font-weight: bold;
+   color: aqua;
+   text-align: center;
+   margin-top: 0;
+}.pro{
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 30px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.pro .code{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 50px;
+   border: 2px solid black;
+   border-radius: 20px;
+   padding: 10px;
+}
+.pro .code h2{
+   color: black;
+   font-size: 20px;
+   font-weight: bold;
+}
+  
+
+  .empty nav button {
+    float: right;
+    margin-right: 20px;
+      margin: 10px auto; /* Center-align the button on small screens */
+  }
+
+  .image {
+    display: inline-flex;
+    margin-left: 160px;
+    margin-top:200px;
+    width: 150px;
+    height: 140px;
+    border-radius: 50%;
+    background-image: url(VIGNESH.png);
+    background-position: center;
+    background-size: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 250px;
+    animation: image 6s ease-in-out; /* Maintain aspect ratio */
+  }
+
+  /* Additional styles for small screens */
+  .sitebar { /* Adjust margin for the sitebar */
+      top: 0; /* Stick it to the top */
+  }
+
+  .logo {
+    margin-top: 10px;
+     width: 20px;
+     height: 20px;
+  }
+
+  .sitebar nav .second {
+    display: flex;
+    float: right;
+    margin-right: 10px;
+    justify-content: space-between;
+    margin-left: 10px;
+    color: black;
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    border-radius: 15px;
+    padding: 3px;
+    margin-top: 8px;
+    font-family: Roboto;
+  }
+  .sitebar {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(73, 71, 71);
+    border-radius: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    animation: header 3s ease-in-out;
+  }
+
+  /* Add more small-sized screen styles here */
+}
+@media(max-width: 700px) {
+  body {
+      overflow: scroll; /* Allow scrolling on small screens */
+  }
+
+  .leftHalf {
+  display: none;
+  }
+
+
+    .rightHalf {
+      width: 100%;
+      position: absolute;
+      right: 0px;
+      height: 100%;
+      animation: right 4s ease-out;
+      overflow-y: scroll;
+     
+    }
+  .sitebar .first {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: Ribeye;
+    color: white;
+  }
+  .sitebar .first span{
+    display: none;
+  }
+  .rightHalf .para{
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-top: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .about{
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.edu{
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.con .ul{
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.lan{
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 30px;
+  margin-left: 20px;
+ 
+}
+.lan .language{
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.pro h1{
+  text-align: center;
+   font-weight: bold;
+   font-size: 60px;
+}.pro h1{
+   color: white;
+}
+.pro .h2{
+   font-weight: bold;
+   color: aqua;
+   text-align: center;
+   margin-top: 0;
+}.pro{
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 30px;
+
+}
+.pro .code{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 50px;
+   border: 2px solid black;
+   border-radius: 20px;
+   padding: 10px;
+}
+.pro .code h2{
+   color: black;
+   font-size: 20px;
+   font-weight: bold;
+}
+  
+
+  .empty nav button {
+    float: right;
+    margin-right: 20px;
+      margin: 10px auto; /* Center-align the button on small screens */
+  }
+  .myimg{
+    margin: 0 auto;
+    width: 250px;
+    height: 300px;
+    background-image: url("WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    top: 10px;
+    
+  }
+  .image {
+    display: inline-flex;
+    margin: 0 auto;
+    margin-left: 40px;
+    margin-top: 210px;
+    width: 150px;
+    height: 140px;
+    border-radius: 50%;
+    background-image: url(VIGNESH.png);
+    background-position: center;
+    background-size: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 250px;
+    animation: image 4s ease-in-out; /* Maintain aspect ratio */
+  }
+
+
+
+  /* Additional styles for small screens */
+  .sitebar { /* Adjust margin for the sitebar */
+      top: 0; /* Stick it to the top */
+  }
+
+  .logo {
+     width: 20px;
+     height: 20px;
+  }
+
+  .sitebar nav .second {
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    margin-left: 5px;
+    color: black;
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    border-radius: 10px;
+    padding: 3px;
+    margin-top: 8px;
+    font-family: Roboto;
+  }
+  .sitebar {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(73, 71, 71);
+    border-radius: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    animation: header 3s ease-in-out;
+  }
+
+  /* Add more small-sized screen styles here */
 
