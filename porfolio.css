@@ -937,7 +937,6 @@ body {
       position: -webkit-sticky;
       position: sticky;
       top: 0px;
-      margin-left: 10px;
     }
     .empty #port {
       padding-top: 6px;
@@ -1093,8 +1092,8 @@ body {
   }
 
   .logo {
-     width: 5px;
-     height: 5px;
+     width: 10px;
+     height: 10px;
   }
 
   .sitebar nav .second {
