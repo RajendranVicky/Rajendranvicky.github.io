@@ -905,3 +905,217 @@ body {
 
   /* Add more small-sized screen styles here */
 }
+@media(max-width: 402px) {
+  body {
+      overflow: scroll; /* Allow scrolling on small screens */
+  }
+
+  .leftHalf {
+  display: none;
+  }
+
+
+    .rightHalf {
+      width: 100%;
+      position: absolute;
+      right: 0px;
+      height: 100%;
+      animation: right 4s ease-out;
+      overflow-y: scroll;
+     
+    }
+    .empty {
+      display: flex;
+      color: white;
+      background-color: black;
+      padding: 0;
+      font-family: Ribeye;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0px;
+    }
+    .empty #port {
+      padding-top: 6px;
+      font-size: 2rem;
+    }
+    
+    .empty  nav button {
+      display: flex;
+      justify-content: space-evenly;
+      margin-left: 930px;
+      color:black;
+      background-color: hsl(180, 100%, 50%);
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1rem;
+      border-radius: 10px;
+      margin-top: 7px;
+      font-family: Roboto;
+    }
+  .sitebar .first {
+    font-size: 1rem;
+    font-family: Ribeye;
+    color: white;
+    margin-bottom: 3px;
+  }
+  .sitebar .first span{
+    display: none;
+  }
+  .rightHalf .para{
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-top: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .about{
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    line-height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.edu{
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.con .ul{
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.lan{
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 30px;
+  margin-left: 20px;
+ 
+}
+.lan .language{
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.pro h1{
+  text-align: center;
+   font-weight: bold;
+   font-size: 60px;
+}.pro h1{
+   color: white;
+}
+.pro .h2{
+   font-weight: bold;
+   color: aqua;
+   text-align: center;
+   margin-top: 0;
+}.pro{
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 30px;
+
+}
+.pro .code{
+  display: block;
+   margin-top: 50px;
+   border: 2px solid black;
+   border-radius: 20px;
+}
+.pro .code h2{
+   color: black;
+   font-size: 20px;
+   font-weight: bold;
+}
+.con .ul h3{
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+.con .ul h4{
+  font-size: 20px;
+  font-weight: bold;
+  color:aqua;
+}
+
+  .empty nav button {
+    float: right;
+    margin-right: 20px;
+      margin: 10px auto; /* Center-align the button on small screens */
+  }
+  .myimg{
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 250px;
+    height: 300px;
+    background-image: url("WhatsApp_Image_2023-10-02_at_12.08.23_PM-removebg-preview.png");
+    background-position: center;
+    background-size: 100%;
+    position: sticky;
+    top: 10px;
+    
+  }
+  .image {
+    display: inline-flex;
+    margin: 0 auto;
+    margin-left: 40px;
+    margin-top: 180px;
+    width: 150px;
+    height: 140px;
+    border-radius: 50%;
+    background-image: url(VIGNESH.png);
+    background-position: center;
+    background-size: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 180px;
+    animation: image 4s ease-in-out; /* Maintain aspect ratio */
+  }
+
+
+
+  /* Additional styles for small screens */
+  .sitebar { /* Adjust margin for the sitebar */
+      top: 0; /* Stick it to the top */
+  }
+
+  .logo {
+     width: 5px;
+     height: 5px;
+  }
+
+  .sitebar nav .second {
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    margin-left: 5px;
+    color: black;
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 8px;
+    font-family: Roboto;
+  }
+  .sitebar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(73, 71, 71);
+    border-radius: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    animation: header 3s ease-in-out;
+    padding: 0;
+  }
+
+  /* Add more small-sized screen styles here */
+}
