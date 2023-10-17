@@ -9,7 +9,7 @@ body{
 .container{
     margin: auto;
     display: grid;
-    grid-template-columns: 280px 68%;
+    grid-template-columns: 280px 60%;
     width: 235mm;
     height: 320mm;
     overflow: hidden;
