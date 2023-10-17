@@ -172,6 +172,7 @@ body{
 .card-two  .para li{
     padding-left: 10px;
     padding-top: 10px;
+     padding-right: 20px;
 }
 .card-two .para p{
     font-size: 1em;
