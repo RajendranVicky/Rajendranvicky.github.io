@@ -1,3 +1,4 @@
+
 <html>
 <head><title>label</title>
 
@@ -9,9 +10,9 @@
 <input type="text" name="username" id="username" ></input></td>
 <td><label>Initial:</label>
 <input type="text" name="initial" id="initial" maxlength="1" size="4"></input></td>
-<td><label>Mobilenumber:</label>
-<input type="number" name="number" id="number" maxlength="10"></input></td>
-<td><button type="button">Verify</button></td>
+<td><label for="phone">MobileNumber:</label>
+<input type="tel" name="phone" id="phone" maxlength="10"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" ></input></td>
+<td><button type="button" style="float:right;">Verify</button></td>
 </tr>
 <tr><td><label>Father's Name:</label>
 <input type="text" name="fathername" id="fathername" style="margin-left:52px;" ></input></td>
@@ -20,9 +21,9 @@
 <td><label>Mother's Name:</label>
 <input type="text" name="mothername" id="mothername" ></input></td>
 <td><label>Initial:</label>
-<input type="text" name="initial" id="initial" maxlength="1"  size="4" style="margin-left:5px;"></input></td></tr>
+<input type="text" name="initial" id="initial" maxlength="1"  size="4"></input></td></tr>
 
-<tr><td><label>Gender:</label><select style="margin-left:103px;"><option>male</option>
+<tr><td><label>Genter:</label><select style="margin-left:105px; width:115px;" ><option>male</option>
 <option>female</option></select></td></tr>
 
 <tr><td><label>Date:</label>
