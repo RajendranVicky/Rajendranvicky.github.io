@@ -1,0 +1,62 @@
+<!doctype html>
+<head><title>form</title>
+<style>
+tr td{
+padding:10px;
+}
+</style>
+</head>
+<body>
+<form style="margin-left:300px;background-color:grey;width:500px;padding:10px;">
+<center><h1>Registration Form</h1></center>
+<table>
+<tr><td><label>First name:</label>
+<td><input type="text" name="firstname" id="firstname" placeholder="enter your firstname"  title="fill the firstname" required/></td></tr>
+
+<tr><td><label>Last name:</label></td>
+<td><input type="text" name="lastname" id="lastname" placeholder="enter your lastname" required/></td></tr>
+
+<tr><td>
+    <label for="gender" id="gen">Gender:</label></td>
+
+  <td>  <input type="radio" name="gender" id="male" value="male">
+    <label for="male" class="radiolabel">male</label>
+
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female"  class="radiolabel">female</label></td>
+</tr>
+
+<tr><td><label>Gmail:</label></td>
+<td><input type="gmail" name="gmail" id="gmail" placeholder="enter your gmail"></td></tr>
+
+<tr><td><label for="phone">Mobilenumber:</label></td>
+<td><input type="tel" name="phone" id="phone" placeholder="enter your mobilenumber"></td></tr>
+
+<tr><td><label>Address</label></td>
+<td><textarea id="address" name="address" row="10" column="50"></textarea></td></tr>
+
+<tr><td><label>Language:</label></td>
+
+<td><input type="checkbox" id="language" name="language">
+<label>Tamil</label>
+
+<input type="checkbox" id="language" name="language">
+<label>English</label>
+</td></tr>
+
+<tr><td><label>Date of birth</label></td>
+<td><input type="number" id="date" name="date" placeholder="date" min="1" max="31"style="width:80px;" required/>
+<input type="number" id="month" name="month" placeholder="month" min="1" max="12" style="width:80px;" required/>
+<input type="number" id="year" name="year" placeholder="year" min="2000" max="2023" style="width:80px;" required/></td></tr>
+
+
+
+
+<tr><td><label>Subscripe to NewsLetter:</label></td>
+<td><input type="checkbox" id="letter" name="letter"></td></tr>
+
+</table>
+
+<center><button type="submit" >Submit</button></center>
+</form></body>
+</html>
