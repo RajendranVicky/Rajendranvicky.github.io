@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+
+}
+form{
+    overflow: scroll; 
+}
+.total{
+    border: 5px solid black;
+    width: 50%;
+    height:580px;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 25px;
+    /* background-color: rgb(241, 110, 110); */
+
+}
+.text input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px 0 20px  0;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black,
+    -5px -5px 5px black;
+}
+
+.radio{
+    font-size: 25px;
+    margin: 20px 0 20px 0;
+}
+.radio input{
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    margin: 20px;
+}
+    
+select{
+    display: block;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 20px 0 20px 0;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px black,
+    -5px -5px 5px black;
+    background-color: white;
+}
+.btn{
+    text-align: center;
+}
+button{
+    margin: 20px 10px 20px 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black,
+    -5px -5px 5px black;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    font-size: none;
+}
