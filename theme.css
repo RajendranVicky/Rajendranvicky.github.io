@@ -1,0 +1,92 @@
+body  {
+  background-image: url("../image/bulldog-1224267_640.jpg"); 
+  }
+#top{
+    background-color:#11351e;
+    width:90vw;
+    border-radius: 20px;
+    margin: 0 0 0 50px;
+    text-align: center;
+    font-size: 30px;
+}
+#top .h1{
+    color: #cdcce8;  
+}
+#top:hover{
+    background-color:#cdcce8 ;
+}
+#top:hover i{
+    color:red;
+}
+#top h1:hover{
+    color: #11351e;
+}
+.circle img{
+    display: inline-flex;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border:2px solid white;
+}
+#cen{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 30px;
+}  
+.square{
+    padding: 20px;
+    width:200px;
+    height:200px;
+    border-radius: 20px;
+    /* background-color:#ebeddf; */
+    box-shadow: 5.2px 10.4px 10.4px hsl(0deg 0% 0% / 0.34);
+}
+#bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.square:hover{
+    background-color:#cdcce8 ;
+
+}
+.white{
+    display: inline-flex;
+    width:160px;
+    height:80px;
+    background-color:#11351e;
+    margin:60px 0 0 30px;
+    border-radius: 20px;
+    color:#cdcce8;
+}
+.visible{
+  margin: 100px 0 0 80px;
+  visibility: hidden;
+  width: 120px;
+  height:130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+
+}
+.white:hover{
+    background-color:rgb(180, 65, 65);
+}
+.white:hover .visible{
+    visibility: visible;
+}
+.white p{
+    margin:20px  0 0 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.white i{
+    padding: 5px;
+    font-size: 30px;
+}
+.white:hover i{
+    color:#3232a8;
+}
