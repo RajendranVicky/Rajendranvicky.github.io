@@ -7,9 +7,18 @@ body{
     position: sticky;
     top: 0;
 }
+
 .head ul li{
     list-style: none;
     display: inline;
+}
+.body{
+    background-image: url("lap.jpg");
+    height: 100vh;
+    margin-top: 0px;
+    position: relative;
+    animation: image 4s ease-in-out;
+
 }
 
 .head{
@@ -18,6 +27,7 @@ body{
     justify-content:space-around;
     background-color: white;
     height: 60px;
+    animation: header 4s ease-in-out;
 }
 .head ul {
     margin: 0 0 0 200px;
@@ -43,6 +53,7 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    animation: image 4s ease-in-out;
 }
 .head {
     align-items: center;
@@ -62,10 +73,30 @@ body{
     color: black;
     font-weight: bold;
 }
+
+@keyframes header {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+  }
+  @keyframes image {
+    0% {
+      transform: translateX(100%);
+    }
+  }
+  
 .center{
     margin: 150px auto;
     text-align: center;
+    animation: center 4s ease-out;
 }
+@keyframes center {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
 .center .p1{
     font-size: 28px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -78,7 +109,8 @@ body{
      line-height: 25px;
      font-size: 20px;
      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     color:rgb(82, 77, 77) ;
+     color:rgb(59, 55, 55) ;
+
 
 }
 .center .p3{
@@ -96,7 +128,7 @@ body{
     border-radius: 5px;
 }
 #about{
-    margin:200px 50px 0 50px;
+    margin:150px 50px 0 50px;
     text-align: center;
     word-spacing: 5px;
     line-height: 25px;
@@ -154,6 +186,63 @@ padding-top: 10px;}
 }
 #about i:hover{
     color:black;
+}
+#skills{
+    margin:200px 50px 0 50px;
+    word-spacing: 5px;
+    line-height: 25px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(82, 77, 77) ;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+padding-top: 10px;
+}
+#skills h1{
+    text-align: center;
+    font-size: 50px;
+    text-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+#skills h2{
+    text-align: center;
+    color: #F6BE00;
+}
+#skills .code{
+    display: flex;
+    justify-content: space-evenly;
+}
+#skills h3{
+    font-size: 30px;
+    color: red;
+}
+.details{
+    margin:200px 50px 0 50px;
+    word-spacing: 5px;
+    line-height: 25px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(82, 77, 77) ;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+padding-top: 10px;
+}
+.details h1{
+    text-align: center;
+    font-size: 50px;
+    text-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+.details h2{
+    text-align: center;
+    color: #F6BE00;
+}
+.details{
+    display: flex;
+    justify-content: space-evenly;
+}
+.details h3{
+    font-size: 30px;
+    color: red;
+}
+.details .language li{
+    margin-left: 150px;
 }
 #project{
     margin:100px 50px 0 50px;
