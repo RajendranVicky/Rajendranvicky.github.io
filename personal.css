@@ -1,5 +1,6 @@
 body{
-    background-color:#eceeeb ;
+    background-color: white;
+    background-size: 100%;
     margin: 0;
     padding: 0;
 }
@@ -12,14 +13,14 @@ body{
     list-style: none;
     display: inline;
 }
-.body{
+/* .body{
     background-image: url("lap.jpg");
     height: 100vh;
     margin-top: 0px;
     position: relative;
     animation: image 4s ease-in-out;
 
-}
+} */
 
 .head{
     display:flex;
@@ -66,8 +67,31 @@ body{
     font-size: 25px;
     margin-left: 10px;
     color: grey;
+    animation: wiggle 1s linear infinite;
 }
-
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
 .head a:hover i{
     font-size: 30px;
     color: black;
@@ -87,7 +111,7 @@ body{
   }
   
 .center{
-    margin: 150px auto;
+    margin: 200px auto;
     text-align: center;
     animation: center 4s ease-out;
 }
@@ -100,8 +124,13 @@ body{
 .center .p1{
     font-size: 28px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    text-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2)); */
+
+  
 }
+
+
 
 .center .p2{
      margin: 50px 300px 20px 300px;
@@ -110,12 +139,49 @@ body{
      font-size: 20px;
      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      color:rgb(59, 55, 55) ;
-
+}
+/* .p2 {
+  animation: zoom-in-zoom-out 9s ease infinite; 
 
 }
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.5, 0.5);
+  }
+} */
 .center .p3{
     margin: 50px 0 0 0;
+    animation: wiggle 2s linear infinite;
 }
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
 .center a{
     text-decoration: none;
     color: black;
@@ -135,11 +201,31 @@ body{
     font-size: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:rgb(82, 77, 77) ;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-padding-top: 10px;}
-    
-#about h2{
+padding-top: 10px;
+animation: center 8s ease-out;
+
+}
+@keyframes about{
+    0% {
+      transform: translateX(100%);
+    }
+  }
+.ab{
+    background-image: url("360_F_306033697_cgP7Y992eeoBdfstzG7vkHG5fyS9Z3n2.jpg");
+    height: 100vh;
+}
+#about #hd{
     color:  #F6BE00;
+    background-color: 	#1e1e1e;
+    width:200px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 530px;
+}
+#about .h2{
+    background-color: black;
+   height: 30px;
+   border-radius: 10px;
 }
 #about h1{
     font-size: 50px;
@@ -158,9 +244,24 @@ padding-top: 10px;}
 }
 #about img{
     width:300px;
-    height: 400px;
+    height: 350px;
     padding: 20px;
+    border-radius: 10%;
 }
+ #about img {
+  transition: 1s ease;
+  opacity:0.7;
+transition: 1s ease;
+  }
+  
+   #about img:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+  opacity:1;
+transition: 1s ease;
+  }
 #about .block{
     display: flex;
     padding: 10px;
@@ -173,13 +274,23 @@ padding-top: 10px;}
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    width: 300px;
     height: 300px;
     padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    margin-left: 10px;
+
  
 }
 #about #para2{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    width: 200px;
     height: 300px;
     padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    margin-left: 10px;
+
+
 }
+
 #about i{
     margin-left: 20px;
     font-size: 40px;
@@ -187,6 +298,11 @@ padding-top: 10px;}
 #about i:hover{
     color:black;
 }
+.details{
+    background-image: url("edu.jpg");
+    height: 50vh;
+}
+
 #skills{
     margin:200px 50px 0 50px;
     word-spacing: 5px;
@@ -196,8 +312,11 @@ padding-top: 10px;}
     color:rgb(82, 77, 77) ;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 padding-top: 10px;
+
+
 }
 #skills h1{
+    color: white;
     text-align: center;
     font-size: 50px;
     text-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
@@ -210,10 +329,47 @@ padding-top: 10px;
     display: flex;
     justify-content: space-evenly;
 }
+#skills .code h3{
+    background-color: white;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+}
 #skills h3{
     font-size: 30px;
     color: red;
 }
+#skills{
+    background-image: url("photo-1542831371-29b0f74f9713.avif");
+    background-size: 100%;
+}
+
+#skills .code li{
+    background-color:white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#skills{
+  animation: zoom-in-zoom-out 6s ease infinite; 
+
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.5, 0.5);
+  }
+}
+/* @keyframes proje{
+    0% {
+      transform: translateX(100%);
+    }
+  } */
+
 .details{
     margin:200px 50px 0 50px;
     word-spacing: 5px;
@@ -222,9 +378,47 @@ padding-top: 10px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:rgb(82, 77, 77) ;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-padding-top: 10px;
+    padding:20px;
+    height: 500px;
+
+
+}
+.lan{
+    animation: lan 13s ease-out;
+
+}
+@keyframes lan{
+    0% {
+      transform: translateX(-100%);
+    }
+  }
+  .edu{
+    animation: edu 13s ease-in-out;
+
+
+
+}
+@keyframes edu {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+  }
+.details .language{
+    background-color:   rgba(58, 55, 55, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.details .education{
+    background-color:   rgba(58, 55, 55, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 .details h1{
+    margin-top: 100px;
+    color: black;
     text-align: center;
     font-size: 50px;
     text-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
@@ -232,6 +426,17 @@ padding-top: 10px;
 .details h2{
     text-align: center;
     color: #F6BE00;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+.details #study{
+    margin-left: 270px;
+    width: 200px;
+}
+.details #read{
+    width: 250px;
+    margin-left: 70px;
 }
 .details{
     display: flex;
@@ -242,15 +447,20 @@ padding-top: 10px;
     color: red;
 }
 .details .language li{
-    margin-left: 150px;
+    margin-left: 130px;
 }
+#project{
+    background-image: url("photo-1572177812156-58036aae439c.avif");
+    background-size: 100%;
+}
+
 #project{
     margin:100px 50px 0 50px;
     word-spacing: 5px;
     line-height: 25px;
     font-size: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(82, 77, 77) ;
+    color:white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    padding: 10px;
  
 }
@@ -280,6 +490,20 @@ padding-top: 10px;
     font-size: 50px;
     text-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
 }
+@keyframes pro{
+    0% {
+      transform: translateX(100%);
+    }
+  }
+  .pro{
+    animation: center 18s ease-out;
+
+}
+#contact{
+    background-image: url("giphy\ \(1\).gif");
+    background-size: 100%;
+}
+
 #contact{
     margin:100px 50px 20px 50px;
     text-align: center;
@@ -289,7 +513,17 @@ padding-top: 10px;
     padding: 5px;
     padding-bottom: 20px;
 }
+.con{
+    animation: center 20s ease-out;
+
+}
+@keyframes con{
+    0% {
+      transform: translateX(100%);
+    }
+  }
 #contact h1{
+    color: white;
     font-size: 50px;
     text-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
 }
@@ -334,8 +568,16 @@ justify-content: space-evenly;
     font-size: 20px;
     padding: 10px;
     border: none;
-    background-color: #F6BE00;
+    background-color: #66A182;
     color: black;
     border-radius: 5px;
  }
+ 
+ #contact table{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+
+ }
+
+
  
